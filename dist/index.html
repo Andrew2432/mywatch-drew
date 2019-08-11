@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/simplelightbox.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet" />
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/489109e9a6.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+    <script src="js/simple-lightbox.js" type="text/javascript"></script>
+    <title>myWatch | Home</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">myWatch</h1>
+            <ul class="nav">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>The watch of the history</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nihil, perspiciatis culpa animi eaque et ipsa quibusdam deserunt quod soluta quidem cumque consequatur. Fuga quod, cupiditate est sapiente hic rerum!
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <img src="img/watch-img-5.jpg" alt="Person with watch" />
+        </div>
+    </section>
+
+    <!-- Overlay text -->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h3>Never miss a second</h3>
+                <h2>Precision for lifetime</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas dolor non nemo, mollitia corporis aliquam beatae soluta! Doloremque veritatis voluptate explicabo quas debitis atque. A veritatis aliquam illum tempore.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section-c">
+        <div class="gallery">
+            <a href="img/watch-img-1.jpg" class="big">
+                <img src="img/watch-img-1.jpg" alt="" />
+            </a>
+            <a href="img/watch-img-2.jpg" class="big">
+                <img src="img/watch-img-2.jpg" alt="" />
+            </a>
+            <a href="img/watch-img-3.jpg" class="big">
+                <img src="img/watch-img-3.jpg" alt="" />
+            </a>
+            <a href="img/watch-img-4.jpg" class="big">
+                <img src="img/watch-img-4.jpg" alt="" />
+            </a>
+            <a href="img/watch-img-5.jpg" class="big">
+                <img src="img/watch-img-5.jpg" alt="" />
+            </a>
+            <a href="img/watch-img-6.jpg" class="big">
+                <img src="img/watch-img-6.jpg" alt="" />
+            </a>
+            <a href="img/person-watch-2.jpg" class="big">
+                <img src="img/person-watch-2.jpg" alt="" />
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-footer">
+        <div class="container">
+            <div>
+                <h2>Lorem ipsum dolor sit.</h2>
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook fa-3x"></i>
+                </a>
+            </div>
+            <div>
+                <h3>Company info</h3>
+                <ul>
+                    <li><a href="#">All Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Blog Posts</h3>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <form name="email-form" method="POST" data-netlify="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+								<input
+									type="email"
+									name="email"
+									id="email"
+									size="40"
+									class="form-control"
+									placeholder="Email"
+								/>
+							</span>
+                        <button type="submit" class="form-control submit">
+								<i class="fas fa-chevron-right"></i>
+							</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function() {
+            var $gallery = $(".gallery a").simpleLightbox();
+
+            $gallery.on("show.simplelightbox", function() {
+                console.log("Requested for showing");
+            });
+        });
+    </script>
+</body>
+
+</html>
